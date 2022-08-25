@@ -16,12 +16,4 @@ const galleryMarkup = galleryItems
 
 gallery.innerHTML = galleryMarkup;
 
-gallery.addEventListener("click", zoomImg);
-
-function zoomImg(e) {
-  e.preventDefault();
-
-  if (!e.target.classList.contains("gallery__image")) return;
-
-  const inst = new SimpleLightbox(".gallery a");
-}
+new SimpleLightbox(".gallery a");
